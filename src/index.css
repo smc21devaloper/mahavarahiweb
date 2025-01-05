@@ -5,3 +5,28 @@
 html {
   scroll-behavior: smooth;
 }
+
+.landscape-video {
+  display: block;
+}
+.portrait-video {
+  display: none;
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .landscape-video {
+    display: none;
+  }
+  .portrait-video {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .landscape-video {
+    display: block;
+  }
+  .portrait-video {
+    display: none;
+  }
+}
